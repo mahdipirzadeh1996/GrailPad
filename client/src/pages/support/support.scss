@@ -1,0 +1,157 @@
+.support {
+  width: 100vw;
+  margin-top: 6rem;
+  overflow: hidden;
+  overflow-y: auto;
+  transition: margin 0.3s ease-in-out;
+  padding: 2.5rem;
+  background-color: var(--back);
+  margin-bottom: 3rem;
+
+  .header {
+    flex: 1;
+    height: 20px;
+    display: flex;
+    align-items: center;
+
+    h2 {
+      font-size: 34px;
+      color: white;
+    }
+  }
+
+  .mainAbout {
+    display: flex;
+    margin-top: 2rem;
+    overflow: hidden;
+    padding: 2rem;
+    flex-direction: column;
+    background-color: var(--menu);
+    border-radius: 1.375rem;
+
+    .aboutLabel {
+      display: flex;
+      flex: 1;
+      align-items: center;
+      margin-bottom: 1rem;
+      span {
+        font-size: 16px !important;
+        line-height: 1.5;
+        color: #828690;
+      }
+    }
+
+    .aboutInput {
+      display: flex;
+      flex: 1;
+      align-items: center;
+      margin-bottom: 1rem;
+      padding: 10px;
+      border-radius: 15px;
+      border-width: 2.5px;
+      border-style: solid;
+      border-color: #473f72;
+
+      .idnBtn {
+        width: 100%;
+        height: 100%;
+        background-color: var(--menu);
+        border: none;
+        border-radius: 15px;
+        transition: background-color 0.2s ease-in-out;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+
+      .inp {
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        font-size: 14px;
+      }
+      inp::placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #473f72;
+        opacity: 1; /* Firefox */
+      }
+      inp:-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: #473f72;
+      }
+      inp::-ms-input-placeholder {
+        /* Microsoft Edge */
+        color: #473f72;
+      }
+    }
+
+    .questionInp {
+      height: 150px;
+      align-items: center;
+      margin-bottom: 1rem;
+      padding: 10px;
+      border-radius: 15px;
+      border-width: 2.5px;
+      border-style: solid;
+      border-color: #473f72;
+      overflow: hidden;
+
+      .inp {
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        font-size: 14px;
+        resize: none;
+      }
+      inp::placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #473f72;
+        opacity: 1; /* Firefox */
+      }
+      inp:-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: #473f72;
+      }
+      inp::-ms-input-placeholder {
+        /* Microsoft Edge */
+        color: #473f72;
+      }
+    }
+
+    .inputContainer {
+      width: 100%;
+      height: 40px;
+      margin-top: 1rem;
+      overflow: hidden;
+      border-radius: 15px;
+      background-color: var(--btnBack);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      color: #fff;
+      border: none;
+
+      &:hover {
+        background-color: var(--btnHover);
+      }
+    }
+    .inputContainer:active {
+      background-color: var(--btnActive);
+    }
+  }
+
+  .seperator {
+    width: 100%;
+    height: 1.5px;
+    background-color: #473f72;
+    margin-bottom: 1rem;
+  }
+}

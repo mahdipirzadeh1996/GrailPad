@@ -1,0 +1,52 @@
+.MuiCardMedia-media {
+    object-fit: inherit;
+    height: 140px;
+}
+
+.idoLogoContain {
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .idoLogo {
+        width: 80px;
+        height: 80px;
+        transition: transform 0.3s ease-in-out;
+    }
+    .idoLogo:hover {
+        transform: scale(1.5);
+    }
+}
+
+.contain {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+
+    h2 {
+        font-size: 30px;
+        color: white;
+    }
+
+    .coinLabel {
+        margin-bottom: 10px;
+        .label {
+            font-size: 14px !important;
+            color: #828690;
+        }
+        .value {
+            font-size: 14px !important;
+            color: #fff;
+        }
+    }
+
+    .seperator {
+        width: 100%;
+        height: 1.5px;
+        background-color: #473f72;
+        margin: 1rem 0;
+    }
+}

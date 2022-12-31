@@ -1,0 +1,125 @@
+.overview {
+    width: 100vw;
+    margin-top: 6rem;
+    overflow: hidden;
+    overflow-y: auto;
+    transition: margin 0.3s ease-in-out;
+    padding: 2.5rem;
+    margin-bottom: 3rem;
+    background-color: var(--back);
+
+    .header {
+        flex: 1;
+        height: 20px;
+        display: flex;
+        align-items: center;
+
+        h2 {
+            font-size: 34px;
+            color: white;
+        }
+    }
+
+    .mainPart {
+        height: 8rem;
+        display: flex;
+        margin-top: 2rem;
+        overflow: hidden;
+        border-radius: 1.375rem;
+        background-color: var(--menu);
+        padding: 1.5rem;
+        display: flex;
+
+        .temp {
+            flex: 1;
+            display: flex;
+            font-size: 13px;
+            overflow: hidden;
+
+            .innerTemp {
+                flex: 1;
+                color: white;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .title {
+                    flex: 0.6;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    font-weight: bold;
+                    padding-left: 15px;
+                    border-style: solid;
+                    border-width: 0;
+                    border-bottom-width: 1.5px;
+                    border-color: #473f72;
+                    border-style: solid;
+                }
+                .func {
+                    flex: 1;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    padding-left: 15px;
+
+                    .logo {
+                        width: 40px;
+                        height: 40px;
+                        margin-right: 10px;
+                    }
+
+                    .innerTempBtn {
+                        width: 70%;
+                        height: 55%;
+                        background-color: var(--btnBack);
+                        border: none;
+                        border-radius: 15px;
+                        transition: background-color 0.2s ease-in-out;
+                        cursor: pointer;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: white;
+                        overflow: hidden;
+
+                        &:hover {
+                            background-color: var(--btnHover);
+                        }
+
+                        .icon {
+                            font-size: 20px !important;
+                            margin-right: 5px;
+                        }
+                    }
+                    .innerTempBtn:active {
+                        background-color: var(--btnActive);
+                    }
+                }
+
+                .inp {
+                    flex: 1;
+                    height: 55%;
+                    margin: 15px;
+                    margin-left: 0;
+                    border-width: 2px;
+                    border-radius: 15px;
+                    border-color: #473f72;
+                    border-style: solid;
+
+                    input {
+                        width: 90%;
+                        height: 100%;
+                        margin-left: 5px;
+                        margin-right: 10px;
+                        color: #fff;
+                        background-color: transparent;
+                        border: none;
+                        outline: none;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}

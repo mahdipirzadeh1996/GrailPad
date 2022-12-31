@@ -1,0 +1,353 @@
+.moreDetails {
+    width: 100vw;
+    margin-top: 6rem;
+    overflow: hidden;
+    overflow-y: auto;
+    transition: margin 0.3s ease-in-out;
+    padding: 2.5rem;
+    position: relative;
+    background-color: var(--back);
+    margin-bottom: 3rem;
+    z-index: 999;
+
+    .header {
+        height: 20rem;
+        background-color: var(--menu);
+        padding: 1rem;
+        border-radius: 1.375rem;
+        margin-bottom: 2rem;
+
+        .cover {
+            width: 100%;
+            height: 70%;
+            overflow: hidden;
+
+            .coverImg {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .temp {
+            width: 100%;
+            height: 30%;
+            display: flex;
+            align-items: center;
+            position: relative;
+
+            .logoContain {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                background-color: wheat; 
+                position: absolute;
+                bottom: 10px;
+                left: 20px;
+                border-style: solid;
+                border-width: 6px;
+                border-color: var(--btnBack);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                overflow: hidden;
+
+                .logo {
+                    width: 70%;
+                    height: 70%;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+
+            .titleContain {
+                margin-left: 150px;
+                width: 250px;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                overflow: hidden;
+
+                h2 {
+                    color: var(--btnBack);
+                }
+                h4 {
+                    color: var(--txtDark);
+                }
+            }
+
+            .socialContain {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                overflow: hidden;
+                padding-left: 3px;
+
+                .tSocial {
+                    width: 120px;
+                    height: 40%;
+                    margin-right: 10px;
+                    border-radius: 1rem;
+                    background-color: #1da1f2;
+                    display: flex;
+                    overflow: hidden;
+                    color: white;
+                    cursor: pointer;
+                    text-decoration: none;
+
+                    .titleContainer {
+                        flex: 1;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-weight: bold;
+                    }
+                    .seperate {
+                        width: 1px;
+                        height: 100%;
+                        background-color: white;
+                    }
+                    .iconContain {
+                        flex: 0.4;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+                .tSocial:hover {
+                    background-color: #1b7fbd;
+                }
+                .tSocial:active {
+                    box-shadow: 0px 0px 5px 1px #1da1f2;
+                }
+
+                .ySocial {
+                    width: 120px;
+                    height: 40%;
+                    margin-right: 10px;
+                    border-radius: 1rem;
+                    background-color: #ff0000;
+                    display: flex;
+                    overflow: hidden;
+                    color: white;
+                    cursor: pointer;
+                    text-decoration: none;
+
+                    .titleContainer {
+                        flex: 1;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-weight: bold;
+                    }
+                    .seperate {
+                        width: 1px;
+                        height: 100%;
+                        background-color: white;
+                    }
+                    .iconContain {
+                        flex: 0.4;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+                .ySocial:hover {
+                    background-color: #810000;
+                }
+                .ySocial:active {
+                    box-shadow: 0px 0px 5px 1px #ff0000;
+                }
+
+                .mSocial {
+                    width: 120px;
+                    height: 40%;
+                    margin-right: 10px;
+                    border-radius: 1rem;
+                    background-color: #000;
+                    display: flex;
+                    overflow: hidden;
+                    color: white;
+                    cursor: pointer;
+                    text-decoration: none;
+
+                    .titleContainer {
+                        flex: 1;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-weight: bold;
+                    }
+                    .seperate {
+                        width: 1px;
+                        height: 100%;
+                        background-color: white;
+                    }
+                    .iconContain {
+                        flex: 0.4;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+                .mSocial:hover {
+                    background-color: rgb(65, 65, 65);
+                }
+                .mSocial:active {
+                    box-shadow: 0px 0px 5px 1px #000;
+                }
+            }
+        }
+    }
+    .main {
+        height: 30rem;
+        display: flex;
+        margin-bottom: 2rem;
+
+        .innerMainL {
+            flex: 1;
+            border-radius: 1.375rem;
+            background-color: var(--menu);
+            padding: 2rem;
+            margin-right: 2rem;
+            display: flex;
+            padding-bottom: 8rem;
+
+            .leftPrt {
+                flex: 0.1;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .point {
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    background-color: #969ba0;
+                    margin: -10px 0;
+                    z-index: 20000;
+                }
+                .road {
+                    flex: 1;
+                    width: 2px;
+                    background-color: var(--btnBack);
+                }
+            }
+            .rightPrt {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+
+                .step {
+                    flex: 1;
+                }
+                .point {
+                    width: 100%;
+                    height: 20px;
+                    margin: -10px 0;
+                    display: flex;
+                    flex-direction: column;
+                    color: white;
+
+                    h1 {
+                        font-size: 25px;
+                        margin-bottom: 10px;
+                    }
+                    span {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+        .innerMainR {
+            flex: 1;
+            border-radius: 1.375rem;
+            background-color: var(--menu);
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            align-items: stretch;
+            align-content: stretch;
+
+            .top {
+                display: flex;
+                align-items: center;
+
+                h4 {
+                    color: white;
+                    font-size: 23px !important;
+                    line-height: 1.5;
+                }
+            }
+            .med {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                align-items: stretch;
+                align-content: stretch;
+
+                span {
+                    color: white;
+                    font-size: 18px;
+                    font-weight: lighter;
+                }
+            }
+        }
+    }
+    .end {
+        height: 25rem;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--menu);
+        border-radius: 1.375rem;
+        padding: 4rem;
+
+        .top {
+            margin-bottom: 1rem;
+            h4 {
+                color: white;
+                font-size: 20px !important;
+                line-height: 1.5;
+            }
+        }
+        .med {
+            display: flex;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            align-items: center;
+
+            .section {
+                width: 30px;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 10px;
+                cursor: pointer;
+
+                .icon {
+                    color: white;
+                    font-size: 25px;
+                }
+            }
+        }
+        .below {
+            margin-top: 1rem;
+            height: 100%;
+
+            span {
+                line-height: 30px;
+            }
+        }
+    }
+
+    .seperator {
+        width: 100%;
+        height: 2px;
+        background-color: #473f72;
+    }
+}

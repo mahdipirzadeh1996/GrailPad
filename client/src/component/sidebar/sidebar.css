@@ -1,0 +1,135 @@
+.sidebar {
+  width: 17rem;
+  height: calc(100vh - 6rem);
+  background-color: var(--menu);
+  position: absolute;
+  top: 6rem;
+  left: 0;
+  transform: translateX(0%);
+  transition: width 0.3s ease-in-out;
+  overflow: hidden;
+  overflow-y: auto;
+  z-index: 999;
+}
+
+.sidebar.sidebarClose {
+  width: 5vw;
+}
+
+.sidebarWrapper {
+  color: #969ba0;
+}
+
+.sidebarMenu {
+  margin-bottom: 10px;
+}
+
+.sidebarTitle {
+  font-size: 13px;
+  color: rgb(187, 186, 186);
+}
+
+.sidebarList {
+  list-style: none;
+  padding: 5px;
+}
+.sidebarList.close {
+  padding: 0;
+}
+
+.sidebarListItem {
+  padding: 5px;
+  padding-left: 2.5rem;
+  height: 3rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+
+.sidebarListItem.active {
+  background-color: rgba(6, 149, 93, 0.15);
+  color: var(--btnBack);
+}
+
+.sidebarListItem.active.close {
+  background-color: var(--btnBack);
+  color: white;
+}
+
+.sidebarListItem:hover {
+  color: var(--btnHover);
+}
+
+.sidebarListItem.close {
+  width: calc(5vw - 16px);
+  height: calc(5vw - 16px);
+  padding: 0;
+  justify-content: center;
+  border-radius: 10px;
+  margin: 8px;
+}
+
+.sidebarIdo {
+  padding: 5px;
+  padding-left: 2.5rem;
+  height: 3rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  position: relative;
+}
+
+.sidebarIdo.active {
+  color: var(--btnBack);
+}
+
+.sidebarIdo:hover {
+  margin-right: 20px;
+  font-size: 16px !important;
+  color: var(--btnHover);
+}
+
+.dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 2.5px;
+  background-color: white;
+  margin-right: 10px;
+}
+
+.sidebarIcon {
+  font-size: 2rem !important;
+  margin-right: 20px;
+}
+.sidebarIcon.close {
+  margin: 0;
+}
+
+.test {
+  transition: transform 0.3s ease-in-out;
+  position: absolute;
+  right: 10px;
+}
+
+.test.open {
+  transform: rotate(90deg);
+}
+
+.ido {
+  max-height: 0;
+  transition: max-height 0.3s ease-out;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding-left: 3rem;
+}
+
+.ido.open {
+  max-height: 500px;
+  transition: max-height 0.2s ease-in;
+}

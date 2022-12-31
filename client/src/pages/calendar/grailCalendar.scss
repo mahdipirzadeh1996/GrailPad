@@ -1,0 +1,33 @@
+.calendar {
+  width: 100vw;
+  margin-top: 6rem;
+  overflow: hidden;
+  overflow-y: auto;
+  transition: margin 0.3s ease-in-out;
+  padding: 2.5rem;
+  text-align: center;
+  background-color: var(--back);
+  margin-bottom: 3rem;
+
+  .header {
+    flex: 1;
+    height: 20px;
+    display: flex;
+    align-items: center;
+
+    h2 {
+      font-size: 34px;
+      color: white;
+    }
+  }
+
+  .calendarContain {
+    display: flex;
+    margin-top: 2rem;
+    overflow: hidden;
+    padding: 2rem;
+    flex-direction: column;
+    background-color: var(--menu);
+    border-radius: 1.375rem;
+  }
+}

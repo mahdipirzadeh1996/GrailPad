@@ -1,0 +1,224 @@
+.home {
+  width: 100vw;
+  margin-top: 6rem;
+  overflow: hidden;
+  overflow-y: auto;
+  transition: margin 0.3s ease-in-out;
+  padding: 2.5rem;
+  margin-bottom: 3rem;
+  background-color: var(--back);
+
+  .header {
+    height: 50px;
+    display: flex;
+
+    .hLeft {
+      flex: 1;
+      display: flex;
+      align-items: center;
+
+      h2 {
+        font-size: 34px;
+        color: white;
+      }
+    }
+    .hRight {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      .idnBtn {
+        width: 230px;
+        height: 100%;
+        margin-right: 10px;
+        background-color: #3b3363;
+        border: none;
+        border-radius: 15px;
+        transition: background-color 0.2s ease-in-out;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+
+      .filterBtn {
+        width: 180px;
+        height: 100%;
+        background-color: #6418c3;
+        border: none;
+        border-radius: 15px;
+        transition: background-color 0.2s ease-in-out;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+
+        &:hover {
+          background-color: #5314a1;
+        }
+
+        .icon {
+          font-size: 20px !important;
+          margin-right: 5px;
+        }
+      }
+      .filterBtn:active {
+        background-color: #4d1296;
+        box-shadow: 0px 0px 3px 1px #4b1c8a;
+      }
+    }
+  }
+
+  .grlBlnc {
+    height: 33rem;
+    display: flex;
+    margin-top: 4rem;
+    overflow: hidden;
+
+    .grlHldBlnc {
+      flex: 1;
+      flex-direction: column;
+      max-width: 50%;
+      border-radius: 1.375rem;
+      padding: 2rem;
+      background-color: var(--menu);
+      overflow: hidden;
+
+      .grlBlncLabel {
+        display: flex;
+        align-items: center;
+
+        h4 {
+          color: white;
+          font-size: 20px !important;
+          line-height: 1.5;
+        }
+      }
+
+      .grlBlncChrt {
+        min-height: 260.15px;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+
+        .labeContain {
+          width: 70px;
+          height: 70px;
+          position: absolute;
+          bottom: 55px;
+          display: flex;
+          align-items: flex-end;
+          justify-content: center;
+          font-size: 15px;
+        }
+      }
+
+      .tknBlnc {
+        display: flex;
+        min-height: 188px;
+
+        .bLeft {
+          flex: 1;
+          display: flex;
+
+          .coinContain {
+            display: flex;
+            flex-direction: column;
+
+            .coinLabel {
+              display: flex;
+              flex: 1;
+              align-items: center;
+              span {
+                font-size: 14px !important;
+                line-height: 1.5;
+                color: #828690;
+              }
+            }
+          }
+        }
+        .bRight {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+
+          .coinBlnc {
+            flex: 1;
+            display: flex;
+            align-items: center;
+
+            span {
+              font-size: 14px !important;
+              line-height: 1.5;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .tknPrc {
+    height: 12rem;
+    margin-top: 4rem;
+    display: flex;
+
+    .prcCard {
+      width: 12rem;
+      height: 100%;
+      transition: all 0.5s ease-in-out;
+      position: relative;
+      border: 0px solid transparent;
+      border-radius: 1.375rem;
+      background-color: #3b3363;
+      margin-right: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+
+      .coinLogo {
+        width: 80px;
+        height: 80px;
+        border-radius: calc(80px / 2);
+        position: absolute;
+        top: -40px;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .profit {
+        display: flex;
+        margin-top: 10px;
+
+        .icon {
+          font-size: 25px !important;
+          color: #2bbe55;
+          margin-right: 10px;
+        }
+
+        span {
+          color: #2bbe55;
+          margin-right: 5px;
+        }
+
+        .week {
+          color: #757482;
+        }
+      }
+
+      &:hover {
+        transform: translateY(-10%);
+      }
+    }
+  }
+}

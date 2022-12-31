@@ -1,0 +1,146 @@
+.walletDialog {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+
+    .main {
+        width: 40%;
+        height: 40%;
+        background-color: var(--back);
+        border-radius: 1.375rem;
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        position: relative;
+
+        .header {
+            width: 100%;
+            color: #fff;
+            overflow: hidden;
+
+            span {
+                font-weight: 600;
+                font-size: 20px;
+            }
+        }
+
+        .walletContain {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            margin-top: 20px;
+
+            .col {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                overflow: hidden;
+
+                .wallet {
+                    width: calc(100% - 20px);
+                    padding: 10px;
+                    border-radius: 15px;
+                    border: none;
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                    overflow: hidden;
+
+                    &:hover {
+                        background-color: rgba(0, 0, 0, 0.3);
+                    }
+
+                    img {
+                        width: 30px;
+                        height: 30px;
+                    }
+
+                    span {
+                        color: #fff;
+                        margin-left: 5px;
+                        font-weight: 600;
+                    }
+                }
+                .wallet:active {
+                    background-color: rgba(0, 0, 0, 0.5);
+                }
+
+                .net {
+                    max-height: 0;
+                    width: calc(100% - 30px);
+                    transition: max-height 0.6s ease-out;
+                    overflow: hidden;
+                    display: flex;
+                    flex-direction: column;
+                    padding-left: 30px;
+
+                    .section {
+                        display: flex;
+                        align-items: center;
+                        padding: 8px;
+                        border-radius: 15px;
+                        cursor: pointer;
+
+                        &:hover {
+                            background-color: rgba(0, 0, 0, 0.3);
+                        }
+                        
+                        .colors {
+                            overflow: hidden;
+                        }
+                        .labels {
+                            flex: 1;
+                            display: flex;
+                            flex-direction: column;
+                            overflow: hidden;
+                            color: #fff;
+                            margin-left: 5px;
+                            font-size: 13px;
+                        }
+                    }
+                    .section:active {
+                        background-color: rgba(0, 0, 0, 0.5);
+                    }
+                }
+                .net.open {
+                    max-height: 500px;
+                    transition: max-height 1s ease-in;
+                }
+            }
+        }
+
+        .close {
+            width: 25px;
+            height: 25px;
+            color: var(--btnBack);
+            border: none;
+            transition: color 0.2s ease-in-out;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            background-color: transparent;
+
+            &:hover {
+                color: var(--btnHover);
+            }
+
+            .closeIcon {
+                font-size: 40px;
+            }
+        }
+        .close:active {
+            color: var(--btnActive);
+        }
+    }
+}

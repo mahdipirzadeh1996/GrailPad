@@ -1,0 +1,100 @@
+.stakeDialog {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+
+    .main {
+        width: 70%;
+        background-color: var(--menu);
+        border-radius: 1.375rem;
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        position: relative;
+
+        .header {
+            width: 100%;
+            height: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            h2 {
+                font-size: 30px;
+                color: white;
+            }
+        }
+
+        h1 {
+            text-align: left;
+            color: white;
+            margin: 10px 0;
+            font-size: 28px;
+        }
+
+        .startStake {
+            width: 100%;
+            height: 70%;
+            padding: 10px 0;
+            background-color: var(--btnBack);
+            border: none;
+            border-radius: 15px;
+            transition: background-color 0.2s ease-in-out;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            overflow: hidden;
+            margin-top: 1rem;
+
+            &:hover {
+                background-color: var(--btnHover);
+            }
+        }
+        .startStake:active {
+            background-color: var(--btnActive);
+        }
+
+        .close {
+            width: 25px;
+            height: 25px;
+            color: var(--btnBack);
+            border: none;
+            transition: color 0.2s ease-in-out;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            background-color: transparent;
+
+            &:hover {
+                color: var(--btnHover);
+            }
+
+            .closeIcon {
+                font-size: 40px;
+            }
+        } 
+        .close:active {
+            color: var(--btnActive);
+        }
+    }
+
+    .seperator {
+        width: 100%;
+        height: 2px;
+        background-color: #665c9e;
+        margin-bottom: 1rem;
+    }
+}
